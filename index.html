@@ -74,7 +74,7 @@
                                     <li><a class="menu-item" href="index.html">Home</a>
                                         
                                     </li>
-                                    <li><a class="menu-item" href="cars.html">Cars</a>
+                                    <!-- <li><a class="menu-item" href="cars.html">Cars</a>
                                         <ul>
                                             <li><a class="menu-item" href="cars.html">Cars List 1</a></li>
                                             <li><a class="menu-item" href="02_dark-cars.html">Cars List 1 Dark</a></li>
@@ -83,7 +83,7 @@
                                             <li><a class="menu-item" href="car-single.html">Cars Single</a></li>
                                             <li><a class="menu-item" href="02_dark-car-single.html">Cars Single Dark</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <li><a class="menu-item" href="quick-booking.html">Booking</a>
                                         <ul>
                                             <li><a class="menu-item new" href="quick-booking.html">Quick Booking</a></li>
@@ -125,7 +125,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a class="menu-item" href="#">Elements</a>
+                                    <!-- <li><a class="menu-item" href="#">Elements</a>
                                         <ul>
                                             <li><a class="menu-item" href="preloader.html">Preloader</a></li>
                                             <li><a class="menu-item" href="icon-boxes.html">Icon Boxes</a></li>
@@ -141,7 +141,7 @@
                                             <li><a class="menu-item" href="tabs.html">Tabs</a></li>
                                             <li><a class="menu-item" href="tooltips.html">Tooltips</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <div class="de-flex-col">
@@ -198,232 +198,166 @@
 
 
 
-        <!-- content begin -->
-        <div class="no-bottom no-top" id="content">
-            <div id="top"></div>
-            <section id="section-hero" aria-label="section" class="jarallax">
-                <img src="images/background/1.jpg" class="jarallax-img" alt="">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12 text-light">
-                            <div class="spacer-double"></div>
-                            <div class="spacer-double"></div>
-                            <h1 class="mb-2">Looking for a <span class="id-color">vehicle</span>? You're at the right place.</h1>
-                            <div class="spacer-single"></div>
-                        </div>
+      <!-- content begin -->
+<div class="no-bottom no-top" id="content">
+    <div id="top"></div>
 
-                        <div class="col-lg-12">
-                            <div class="spacer-single sm-hide"></div>
-                            <div class="p-4 rounded-3 shadow-soft" data-bgcolor="#ffffff">
-                                
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
 
-                                <form name="contactForm" id='contact_form' method="post">
-                                    <div id="step-1" class="row">
-                                        <div class="col-lg-6 mb30">
-                                            <h5>What is your vehicle type?</h5>
+        <div class="carousel-inner">
 
-                                            <div class="de_form de_radio row g-3">
-                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
-                                                    <input id="radio-1a" name="Car_Type" type="radio" value="Residential" checked="checked">
-                                                    <label for="radio-1a"><img src="images/select-form/car.png" alt="">Urbania</label>
-                                                </div>
-
-                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
-                                                    <input id="radio-1b" name="Car_Type" type="radio" value="Office">
-                                                    <label for="radio-1b"><img src="images/select-form/van.png" alt="">Tempo traveller</label>
-                                                </div>
-
-                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
-                                                    <input id="radio-1c" name="Car_Type" type="radio" value="Commercial">
-                                                    <label for="radio-1c"><img src="images/select-form/minibus.png" alt="">Minibus</label>
-                                                </div>
-
-                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
-                                                    <input id="radio-1d" name="Car_Type" type="radio" value="Retail">
-                                                    <label for="radio-1d"><img src="images/select-form/sportscar.png" alt="">LuxuryCar</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class="row">
-                                                <div class="col-lg-6 mb20">
-                                                    <h5>Pick Up Location</h5>
-                                                    <input type="text" name="PickupLocation" onfocus="geolocate()" placeholder="Enter your pickup location" id="autocomplete" autocomplete="off" class="form-control">
-
-                                                    <div class="jls-address-preview jls-address-preview--hidden">
-                                                        <div class="jls-address-preview__header">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-6 mb20">
-                                                    <h5>Drop Off Location</h5>
-                                                    <input type="text" name="DropoffLocation" onfocus="geolocate()" placeholder="Enter your dropoff location" id="autocomplete2" autocomplete="off" class="form-control">
-
-                                                    <div class="jls-address-preview jls-address-preview--hidden">
-                                                        <div class="jls-address-preview__header">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-6 mb20">
-                                                    <h5>Pick Up Date & Time</h5>
-                                                    <div class="date-time-field">
-                                                        <input type="text" id="date-picker" name="Pick Up Date" value="">
-                                                        <select name="Pick Up Time" id="pickup-time">
-                                                            <option selected disabled value="Select time">Time</option>
-                                                            <option value="00:00">00:00</option>
-                                                            <option value="00:30">00:30</option>
-                                                            <option value="01:00">01:00</option>
-                                                            <option value="01:30">01:30</option>
-                                                            <option value="02:00">02:00</option>
-                                                            <option value="02:30">02:30</option>
-                                                            <option value="03:00">03:00</option>
-                                                            <option value="03:30">03:30</option>
-                                                            <option value="04:00">04:00</option>
-                                                            <option value="04:30">04:30</option>
-                                                            <option value="05:00">05:00</option>
-                                                            <option value="05:30">05:30</option>
-                                                            <option value="06:00">06:00</option>
-                                                            <option value="06:30">06:30</option>
-                                                            <option value="07:00">07:00</option>
-                                                            <option value="07:30">07:30</option>
-                                                            <option value="08:00">08:00</option>
-                                                            <option value="08:30">08:30</option>
-                                                            <option value="09:00">09:00</option>
-                                                            <option value="09:30">09:30</option>
-                                                            <option value="10:00">10:00</option>
-                                                            <option value="10:30">10:30</option>
-                                                            <option value="11:00">11:00</option>
-                                                            <option value="11:30">11:30</option>
-                                                            <option value="12:00">12:00</option>
-                                                            <option value="12:30">12:30</option>
-                                                            <option value="13:00">13:00</option>
-                                                            <option value="13:30">13:30</option>
-                                                            <option value="14:00">14:00</option>
-                                                            <option value="14:30">14:30</option>
-                                                            <option value="15:00">15:00</option>
-                                                            <option value="15:30">15:30</option>
-                                                            <option value="16:00">16:00</option>
-                                                            <option value="16:30">16:30</option>
-                                                            <option value="17:00">17:00</option>
-                                                            <option value="17:30">17:30</option>
-                                                            <option value="18:00">18:00</option>
-                                                            <option value="18:30">18:30</option>
-                                                            <option value="19:00">19:00</option>
-                                                            <option value="19:30">19:30</option>
-                                                            <option value="20:00">20:00</option>
-                                                            <option value="20:30">20:30</option>
-                                                            <option value="21:00">21:00</option>
-                                                            <option value="21:30">21:30</option>
-                                                            <option value="22:00">22:00</option>
-                                                            <option value="22:30">22:30</option>
-                                                            <option value="23:00">23:00</option>
-                                                            <option value="23:30">23:30</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-6 mb20">
-                                                    <h5>Return Date & Time</h5>
-                                                    <div class="date-time-field">
-                                                        <input type="text" id="date-picker-2" name="Collection Date" value="">
-                                                        <select name="Collection Time" id="collection-time">
-                                                            <option selected disabled value="Select time">Time</option>
-                                                            <option value="00:00">00:00</option>
-                                                            <option value="00:30">00:30</option>
-                                                            <option value="01:00">01:00</option>
-                                                            <option value="01:30">01:30</option>
-                                                            <option value="02:00">02:00</option>
-                                                            <option value="02:30">02:30</option>
-                                                            <option value="03:00">03:00</option>
-                                                            <option value="03:30">03:30</option>
-                                                            <option value="04:00">04:00</option>
-                                                            <option value="04:30">04:30</option>
-                                                            <option value="05:00">05:00</option>
-                                                            <option value="05:30">05:30</option>
-                                                            <option value="06:00">06:00</option>
-                                                            <option value="06:30">06:30</option>
-                                                            <option value="07:00">07:00</option>
-                                                            <option value="07:30">07:30</option>
-                                                            <option value="08:00">08:00</option>
-                                                            <option value="08:30">08:30</option>
-                                                            <option value="09:00">09:00</option>
-                                                            <option value="09:30">09:30</option>
-                                                            <option value="10:00">10:00</option>
-                                                            <option value="10:30">10:30</option>
-                                                            <option value="11:00">11:00</option>
-                                                            <option value="11:30">11:30</option>
-                                                            <option value="12:00">12:00</option>
-                                                            <option value="12:30">12:30</option>
-                                                            <option value="13:00">13:00</option>
-                                                            <option value="13:30">13:30</option>
-                                                            <option value="14:00">14:00</option>
-                                                            <option value="14:30">14:30</option>
-                                                            <option value="15:00">15:00</option>
-                                                            <option value="15:30">15:30</option>
-                                                            <option value="16:00">16:00</option>
-                                                            <option value="16:30">16:30</option>
-                                                            <option value="17:00">17:00</option>
-                                                            <option value="17:30">17:30</option>
-                                                            <option value="18:00">18:00</option>
-                                                            <option value="18:30">18:30</option>
-                                                            <option value="19:00">19:00</option>
-                                                            <option value="19:30">19:30</option>
-                                                            <option value="20:00">20:00</option>
-                                                            <option value="20:30">20:30</option>
-                                                            <option value="21:00">21:00</option>
-                                                            <option value="21:30">21:30</option>
-                                                            <option value="22:00">22:00</option>
-                                                            <option value="22:30">22:30</option>
-                                                            <option value="23:00">23:00</option>
-                                                            <option value="23:30">23:30</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12">
-                                            <input type='submit' id='send_message' value='Find a Vehicle' class="btn-main pull-right">
-                                        </div>
-
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="spacer-double"></div>
-
-                        <div class="row">
+            <!-- ================= SLIDE 1 (Original) ================ -->
+            <div class="carousel-item active">
+                <section id="section-hero" aria-label="section" class="jarallax">
+                    <img src="images/background/1.jpg" class="jarallax-img" alt="">
+                    <div class="container">
+                        <div class="row align-items-center">
                             <div class="col-lg-12 text-light">
-                                <div class="container-timeline">
-                                    <ul>
-                                        <li>
-                                            <h4>Find Your Perfect Ride</h4>
-                                            <p>Browse through our collection of Urbania, commercial, and luxury vehicles to choose the one that fits your travel plan perfectly.											</p>
-                                        </li>
-                                        <li>
-                                            <h4>Set Your Pickup Details</h4>
-                                            <p>Select your pickup location and travel date, and plan your trip with total ease and flexibility.</p>
-                                        </li>
-                                        <li>
-                                            <h4>Confirm Your Reservation</h4>
-                                            <p>	Complete your booking in just a moment and get instant confirmation — fast, smooth, and effortless.</p>
-                                        </li>
-                                        <li>
-                                            <h4>Enjoy a Smooth Journey</h4>
-                                            <p>Now just relax! We handle everything from start to finish so you can travel comfortably without any stress.</p>
-                                        </li>
-                                    </ul>
+                                <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+                                <h1 class="mb-2">Looking for a <span class="id-color">premium ride</span>? Your Urbania awaits.</h1>
+                                <div class="spacer-single"></div>
+                            </div>
+
+                            <div class="spacer-double"></div>
+
+                            <div class="row">
+                                <div class="col-lg-12 text-light">
+                                    <div class="container-timeline">
+                                        <ul>
+                                            <li>
+                                                <h4>Find Your Perfect Ride</h4>
+                                                <p>Browse through our collection of Urbania, commercial, and luxury vehicles to choose the one that fits your travel plan perfectly.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Set Your Pickup Details</h4>
+                                                <p>Select your pickup location and travel date, and plan your trip with total ease and flexibility.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Confirm Your Reservation</h4>
+                                                <p>Complete your booking in just a moment and get instant confirmation — fast, smooth, and effortless.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Enjoy a Smooth Journey</h4>
+                                                <p>Now just relax! We handle everything from start to finish so you can travel comfortably without any stress.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ================= SLIDE 2 ================ -->
+            <div class="carousel-item">
+                <section id="section-hero" aria-label="section" class="jarallax">
+                    <img src="images/Gemini_Generated_Image_px0kdypx0kdypx0k.png" class="jarallax-img" alt="">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 text-light">
+                                <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+                                <h1 class="mb-2">Travel with <span class="id-color">comfort & luxury</span> on every trip.</h1>
+                                <div class="spacer-single"></div>
+                                <div class="spacer-double"></div>
+
+                            <div class="row">
+                                <div class="col-lg-12 text-light">
+                                    <div class="container-timeline">
+                                        <ul>
+                                            <li>
+                                                <h4>Find Your Perfect Ride</h4>
+                                                <p>Browse through our collection of Urbania, commercial, and luxury vehicles to choose the one that fits your travel plan perfectly.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Set Your Pickup Details</h4>
+                                                <p>Select your pickup location and travel date, and plan your trip with total ease and flexibility.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Confirm Your Reservation</h4>
+                                                <p>Complete your booking in just a moment and get instant confirmation — fast, smooth, and effortless.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Enjoy a Smooth Journey</h4>
+                                                <p>Now just relax! We handle everything from start to finish so you can travel comfortably without any stress.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+
+            <!-- ================= SLIDE 3 ================ -->
+            <div class="carousel-item">
+                <section id="section-hero" aria-label="section" class="jarallax">
+                    <img src="images/background/3.jpg" class="jarallax-img" alt="">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 text-light">
+                                <div class="spacer-double"></div>
+                                <div class="spacer-double"></div>
+                                <h1 class="mb-2">Reliable rides for <span class="id-color">every journey</span>.</h1>
+                                <div class="spacer-single"></div>
+                                <div class="spacer-double"></div>
+
+                            <div class="row">
+                                <div class="col-lg-12 text-light">
+                                    <div class="container-timeline">
+                                        <ul>
+                                            <li>
+                                                <h4>Find Your Perfect Ride</h4>
+                                                <p>Browse through our collection of Urbania, commercial, and luxury vehicles to choose the one that fits your travel plan perfectly.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Set Your Pickup Details</h4>
+                                                <p>Select your pickup location and travel date, and plan your trip with total ease and flexibility.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Confirm Your Reservation</h4>
+                                                <p>Complete your booking in just a moment and get instant confirmation — fast, smooth, and effortless.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Enjoy a Smooth Journey</h4>
+                                                <p>Now just relax! We handle everything from start to finish so you can travel comfortably without any stress.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+            
 
             <section aria-label="section" class="pt40 pb40 text-light" data-bgcolor="#111111">
                 <div class="wow fadeInRight d-flex">
@@ -441,95 +375,93 @@
                       <span class="d-item-display">
                         <i class="d-item-dot"></i>
                       </span>
-                      <span class="d-item-txt">Convertible</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Sedan</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Sports Car</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Coupe</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Minivan</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Station Wagon</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Truck</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Minivans</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Exotic Cars</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
+                      <span class="d-item-txt">Urbania – New Launched</span>
+                        <span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Maharaja Class Tempo Traveller</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Tempo Traveller – Golden Class</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Tempo Traveller – Silver Class</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Hybrid HyCross – Toyota</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Kia Carnival</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Etios – Toyota</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
                      </div>
                   </div>
 
                   <div class="de-marquee-list">
                     <div class="d-item">
-                      <span class="d-item-txt">SUV</span>
+                      <span class="d-item-txt">Urbania</span>
                       <span class="d-item-display">
                         <i class="d-item-dot"></i>
                       </span>
-                      <span class="d-item-txt">Hatchback</span>
+                      <span class="d-item-txt">Tempotraveller</span>
                       <span class="d-item-display">
                         <i class="d-item-dot"></i>
                       </span>
-                      <span class="d-item-txt">Crossover</span>
+                      <span class="d-item-txt">MiniBus</span>
                       <span class="d-item-display">
                         <i class="d-item-dot"></i>
                       </span>
-                      <span class="d-item-txt">Convertible</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Sedan</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Sports Car</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Coupe</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Minivan</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Station Wagon</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Truck</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Minivans</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
-                      <span class="d-item-txt">Exotic Cars</span>
-                      <span class="d-item-display">
-                        <i class="d-item-dot"></i>
-                      </span>
+                      <span class="d-item-txt">Urbania – New Launched</span>
+                        <span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Maharaja Class Tempo Traveller</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Tempo Traveller – Golden Class</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Tempo Traveller – Silver Class</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Hybrid HyCross – Toyota</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Kia Carnival</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
+<span class="d-item-txt">Etios – Toyota</span>
+<span class="d-item-display">
+  <i class="d-item-dot"></i>
+</span>
+
                      </div>
                   </div>
                 </div>
@@ -646,31 +578,98 @@ Enjoy a smooth, safe, and relaxing journey in our Urbania — made for groups th
 
                         <div id="items-carousel" class="owl-carousel wow fadeIn">
 
-                            <div class="col-lg-12">
-                                <div class="de-item mb30">
-                                    <div class="d-img">
-                                        <img src="images/Artboard 2 (3).jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="d-info">
-                                        <div class="d-text">
-                                            <h4>Urbania New Launched</h4>
-                                            <!-- <div class="d-item_like">
-                                                <i class="fa fa-heart"></i><span>74</span>
-                                            </div> -->
-                                            <div class="d-atr-group">
-                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
-                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
-                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
-                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">SUV</span>
-                                            </div>
-                                            <div class="d-price">
-                                                Daily rate from <span>$265</span>
-                                                <a class="btn-main" href="car-single.html">Rent Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           <div class="col-lg-12">
+    <div class="de-item mb30">
+        <div class="d-img">
+            <img src="images/Artboard 2 (3).jpg" class="img-fluid" alt="">
+        </div>
+        <div class="d-info">
+            <div class="d-text">
+                <h4>Urbania New Launched</h4>
+
+                <div class="d-atr-group">
+                    <span class="d-atr">16 Seater</span>
+                    <span class="d-atr">1 Driver</span>
+                </div>
+
+                <!-- Divider line -->
+                <hr style="margin: 35px 0; border-color: #eee;">
+
+                <div class="d-price" style="text-align: center;">
+                    <a class="btn-main" 
+                       style="display: inline-block; width: 100%; padding: 10px 0;" 
+                       href="tel:+91 8050171784">
+                       Call Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <div class="col-lg-12">
+    <div class="de-item mb30">
+        <div class="d-img">
+            <img src="images/Artboard 2 (3).jpg" class="img-fluid" alt="">
+        </div>
+        <div class="d-info">
+            <div class="d-text">
+                <h4>Urbania New Launched</h4>
+
+                <div class="d-atr-group">
+                    <span class="d-atr">10 Seater</span>
+                    <span class="d-atr">1 Driver</span>
+                </div>
+
+                <!-- Divider line -->
+                <hr style="margin: 35px 0; border-color: #eee;">
+
+                <div class="d-price" style="text-align: center;">
+                    <a class="btn-main" 
+                       style="display: inline-block; width: 100%; padding: 10px 0;" 
+                       href="tel:+91 8050171784">
+                       Call Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <div class="col-lg-12">
+    <div class="de-item mb30">
+        <div class="d-img">
+            <img src="images/forcetraveller.webp" class="img-fluid" alt="">
+        </div>
+        <div class="d-info">
+            <div class="d-text">
+                <h4>Maharaja Class Tempo Traveller</h4>
+
+                <div class="d-atr-group">
+                    <span class="d-atr">12 Seater</span>
+                    <span class="d-atr">1 Driver</span>
+                </div>
+
+                <!-- Divider line -->
+                <hr style="margin: 35px 0; border-color: #eee;">
+
+                <div class="d-price" style="text-align: center;">
+                    <a class="btn-main" 
+                       style="display: inline-block; width: 100%; padding: 10px 0;" 
+                       href="tel:+91 8050171784">
+                       Call Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
                             <div class="col-lg-12">
                                 <div class="de-item mb30">
@@ -835,75 +834,260 @@ Enjoy a smooth, safe, and relaxing journey in our Urbania — made for groups th
                 </div>
             </section>
 
-            <section id="section-news">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 offset-lg-3 text-center">
-                            <span class="subtitle">Latest From Us</h2></span>
-                            <h2>News &amp; Promo</h2>
-                            <p>Breaking news, fresh perspectives, and in-depth coverage - stay ahead with our latest news, insights, and analysis.</p>
-                            <div class="spacer-20"></div>
-                        </div>
-                        
-                        <div class="col-lg-4 mb10">
-                            <div class="bloglist s2 item">
-                                <div class="post-content">
-                                    <div class="post-image">
-                                        <div class="date-box">
-                                            <div class="m">10</div>
-                                            <div class="d">MAR</div>
-                                        </div>
-                                        <img alt="" src="images/news/pic-blog-1.jpg" class="lazy">
-                                    </div>
-                                    <div class="post-text">                         
-                                        <h4><a href="news-single.html">Enjoy Best Travel Experience<span></span></a></h4>
-                                        <p>Traveling is an enriching experience that allows us to explore new destinations, immerse ourselves in different cultures, and create lifelong memories.</p>
-                                        <a class="btn-main" href="#">Read More</a>
-                                    </div>
-                                </div>
+           <section id="section-news">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 offset-lg-3 text-center">
+                <span class="subtitle">Latest From Us</span>
+                <h2>Urbania Updates & Offers</h2>
+                <p>Get the latest updates on our Urbania rental services, new packages, special deals, and travel tips for a smoother and more comfortable journey.</p>
+                <div class="spacer-20"></div>
+            </div>
+            
+            <div class="col-lg-4 mb10">
+                <div class="bloglist s2 item">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <div class="date-box">
+                                <div class="m">10</div>
+                                <div class="d">MAR</div>
                             </div>
+                            <img alt="" src="images/news/pic-blog-1.jpg" class="lazy">
                         </div>
-                                
-                        <div class="col-lg-4 mb10">
-                            <div class="bloglist s2 item">
-                                <div class="post-content">
-                                    <div class="post-image">
-                                        <div class="date-box">
-                                            <div class="m">12</div>
-                                            <div class="d">MAR</div>
-                                        </div>
-                                        <img alt="" src="images/news/pic-blog-2.jpg" class="lazy">
-                                    </div>
-                                    <div class="post-text">                           
-                                        <h4><a href="news-single.html">The Future of Car Rent<span></span></a></h4>
-                                        <p>As technology continues to advance at a rapid pace, the car rental industry is poised for a transformative shift. The future of car rental promises..</p>
-                                        <a class="btn-main" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                
-                        <div class="col-lg-4 mb10">
-                            <div class="bloglist s2 item">
-                                <div class="post-content">
-                                    <div class="post-image">
-                                        <div class="date-box">
-                                            <div class="m">14</div>
-                                            <div class="d">MAR</div>
-                                        </div>
-                                        <img alt="" src="images/news/pic-blog-3.jpg" class="lazy">
-                                    </div>
-                                    <div class="post-text">                            
-                                        <h4><a href="news-single.html">Holiday Tips For Backpacker<span></span></a></h4>
-                                        <p>For adventure seekers and budget-conscious travelers, backpacking offers a thrilling and immersive way to explore the world. Whether you're embarking..</p>
-                                        <a class="btn-main" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="post-text">                         
+                            <h4><a href="news-single.html">Experience Premium Urbania Travel<span></span></a></h4>
+                            <p>Travel in comfort with our well-maintained Urbania vehicles featuring spacious interiors, luxury seating, and smooth suspension ideal for any group journey.</p>
+                            <a class="btn-main" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+                    
+            <div class="col-lg-4 mb10">
+                <div class="bloglist s2 item">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <div class="date-box">
+                                <div class="m">12</div>
+                                <div class="d">MAR</div>
+                            </div>
+                            <img alt="" src="images/news/pic-blog-2.jpg" class="lazy">
+                        </div>
+                        <div class="post-text">                           
+                            <h4><a href="news-single.html">New Urbania Rental Packages<span></span></a></h4>
+                            <p>We now offer flexible Urbania rental plans for corporate travel, weddings, airport transfers, and weekend trips—designed to match your schedule and budget.</p>
+                            <a class="btn-main" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="col-lg-4 mb10">
+                <div class="bloglist s2 item">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <div class="date-box">
+                                <div class="m">14</div>
+                                <div class="d">MAR</div>
+                            </div>
+                            <img alt="" src="images/news/pic-blog-3.jpg" class="lazy">
+                        </div>
+                        <div class="post-text">                            
+                            <h4><a href="news-single.html">Top Tips for Your Urbania Trip<span></span></a></h4>
+                            <p>Plan a smooth and enjoyable ride with our Urbania travel tips covering comfort, safety, packing essentials, and best practices for group journeys.</p>
+                            <a class="btn-main" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+ <div class="col-lg-12">
+            <div class="spacer-single sm-hide"></div>
+            <div class="p-4 rounded-3 shadow-soft" data-bgcolor="#ffffff">
+            <form name="contactForm" id='contact_form' method="post">
+                                    <div id="step-1" class="row">
+                                        <div class="col-lg-6 mb30">
+                                            <h5>What is your vehicle type?</h5>
+
+                                            <div class="de_form de_radio row g-3">
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1a" name="Car_Type" type="radio" value="Residential" checked="checked">
+                                                    <label for="radio-1a"><img src="images/urbb.jpg" style="height:50px" " alt="">Urbania</label>
+                                                </div>
+
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1b" name="Car_Type" type="radio" value="Office">
+                                                    <label for="radio-1b"><img src="images/urbaniaaa.jpg" alt="">Tempo traveller</label>
+                                                </div>
+
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1c" name="Car_Type" type="radio" value="Commercial">
+                                                    <label for="radio-1c"><img src="images/minibus.jpg" style="height: 50px;" alt="">Minibus</label>
+                                                </div>
+
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1d" name="Car_Type" type="radio" value="Retail">
+                                                    <label for="radio-1d"><img src="images/select-form/sportscar.png" alt="">LuxuryCar</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="col-lg-6 mb20">
+                                                    <h5>Pick Up Location</h5>
+                                                    <input type="text" name="PickupLocation" onfocus="geolocate()" placeholder="Enter your pickup location" id="autocomplete" autocomplete="off" class="form-control">
+
+                                                    <div class="jls-address-preview jls-address-preview--hidden">
+                                                        <div class="jls-address-preview__header">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb20">
+                                                    <h5>Drop Off Location</h5>
+                                                    <input type="text" name="DropoffLocation" onfocus="geolocate()" placeholder="Enter your dropoff location" id="autocomplete2" autocomplete="off" class="form-control">
+
+                                                    <div class="jls-address-preview jls-address-preview--hidden">
+                                                        <div class="jls-address-preview__header">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb20">
+                                                    <h5>Pick Up Date & Time</h5>
+                                                    <div class="date-time-field">
+                                                        <input type="text" id="date-picker" name="Pick Up Date" value="">
+                                                        <select name="Pick Up Time" id="pickup-time">
+                                                            <option selected disabled value="Select time">Time</option>
+                                                            <option value="00:00">00:00</option>
+                                                            <option value="00:30">00:30</option>
+                                                            <option value="01:00">01:00</option>
+                                                            <option value="01:30">01:30</option>
+                                                            <option value="02:00">02:00</option>
+                                                            <option value="02:30">02:30</option>
+                                                            <option value="03:00">03:00</option>
+                                                            <option value="03:30">03:30</option>
+                                                            <option value="04:00">04:00</option>
+                                                            <option value="04:30">04:30</option>
+                                                            <option value="05:00">05:00</option>
+                                                            <option value="05:30">05:30</option>
+                                                            <option value="06:00">06:00</option>
+                                                            <option value="06:30">06:30</option>
+                                                            <option value="07:00">07:00</option>
+                                                            <option value="07:30">07:30</option>
+                                                            <option value="08:00">08:00</option>
+                                                            <option value="08:30">08:30</option>
+                                                            <option value="09:00">09:00</option>
+                                                            <option value="09:30">09:30</option>
+                                                            <option value="10:00">10:00</option>
+                                                            <option value="10:30">10:30</option>
+                                                            <option value="11:00">11:00</option>
+                                                            <option value="11:30">11:30</option>
+                                                            <option value="12:00">12:00</option>
+                                                            <option value="12:30">12:30</option>
+                                                            <option value="13:00">13:00</option>
+                                                            <option value="13:30">13:30</option>
+                                                            <option value="14:00">14:00</option>
+                                                            <option value="14:30">14:30</option>
+                                                            <option value="15:00">15:00</option>
+                                                            <option value="15:30">15:30</option>
+                                                            <option value="16:00">16:00</option>
+                                                            <option value="16:30">16:30</option>
+                                                            <option value="17:00">17:00</option>
+                                                            <option value="17:30">17:30</option>
+                                                            <option value="18:00">18:00</option>
+                                                            <option value="18:30">18:30</option>
+                                                            <option value="19:00">19:00</option>
+                                                            <option value="19:30">19:30</option>
+                                                            <option value="20:00">20:00</option>
+                                                            <option value="20:30">20:30</option>
+                                                            <option value="21:00">21:00</option>
+                                                            <option value="21:30">21:30</option>
+                                                            <option value="22:00">22:00</option>
+                                                            <option value="22:30">22:30</option>
+                                                            <option value="23:00">23:00</option>
+                                                            <option value="23:30">23:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb20">
+                                                    <h5>Return Date & Time</h5>
+                                                    <div class="date-time-field">
+                                                        <input type="text" id="date-picker-2" name="Collection Date" value="">
+                                                        <select name="Collection Time" id="collection-time">
+                                                            <option selected disabled value="Select time">Time</option>
+                                                            <option value="00:00">00:00</option>
+                                                            <option value="00:30">00:30</option>
+                                                            <option value="01:00">01:00</option>
+                                                            <option value="01:30">01:30</option>
+                                                            <option value="02:00">02:00</option>
+                                                            <option value="02:30">02:30</option>
+                                                            <option value="03:00">03:00</option>
+                                                            <option value="03:30">03:30</option>
+                                                            <option value="04:00">04:00</option>
+                                                            <option value="04:30">04:30</option>
+                                                            <option value="05:00">05:00</option>
+                                                            <option value="05:30">05:30</option>
+                                                            <option value="06:00">06:00</option>
+                                                            <option value="06:30">06:30</option>
+                                                            <option value="07:00">07:00</option>
+                                                            <option value="07:30">07:30</option>
+                                                            <option value="08:00">08:00</option>
+                                                            <option value="08:30">08:30</option>
+                                                            <option value="09:00">09:00</option>
+                                                            <option value="09:30">09:30</option>
+                                                            <option value="10:00">10:00</option>
+                                                            <option value="10:30">10:30</option>
+                                                            <option value="11:00">11:00</option>
+                                                            <option value="11:30">11:30</option>
+                                                            <option value="12:00">12:00</option>
+                                                            <option value="12:30">12:30</option>
+                                                            <option value="13:00">13:00</option>
+                                                            <option value="13:30">13:30</option>
+                                                            <option value="14:00">14:00</option>
+                                                            <option value="14:30">14:30</option>
+                                                            <option value="15:00">15:00</option>
+                                                            <option value="15:30">15:30</option>
+                                                            <option value="16:00">16:00</option>
+                                                            <option value="16:30">16:30</option>
+                                                            <option value="17:00">17:00</option>
+                                                            <option value="17:30">17:30</option>
+                                                            <option value="18:00">18:00</option>
+                                                            <option value="18:30">18:30</option>
+                                                            <option value="19:00">19:00</option>
+                                                            <option value="19:30">19:30</option>
+                                                            <option value="20:00">20:00</option>
+                                                            <option value="20:30">20:30</option>
+                                                            <option value="21:00">21:00</option>
+                                                            <option value="21:30">21:30</option>
+                                                            <option value="22:00">22:00</option>
+                                                            <option value="22:30">22:30</option>
+                                                            <option value="23:00">23:00</option>
+                                                            <option value="23:30">23:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <input type='submit' id='send_message' value='Find a Vehicle' class="btn-main pull-right">
+                                        </div>
+
+                                    </div>
+                                    
+                                </form>
+                                 </div>
+                        </div>
 
             <!-- <section id="section-testimonials" class="no-top no-bottom">
                 <div class="container-fluid">
